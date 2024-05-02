@@ -1,0 +1,40 @@
+<!-- HTML -->
+
+<!DOCTYPE html> 
+<html> 
+      
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- CSS file Included -->
+    <link rel="stylesheet" type="text/css" href="todolist.css"> 
+    <!-- JavaScript file included -->
+    <script src="todolist.js" defer></script> 
+    <title>To Do List</title>
+</head> 
+
+<body> 
+    <div class="container">
+        <form id="form-add-todo">
+            <input id= "input-text" type="text" name="task"/>
+            <button>+</button> 
+        </form>
+
+        <ul id="todo-list">
+            <li>
+                <input type="checkbox" onclick="finishTask(this)"/>
+                <span>Task 1</span>
+            </li>
+            <li>
+                <input type="checkbox" onclick="finishTask(this)"/>
+                <span>Task 2</span>
+            </li>
+            <li>
+                <input type="checkbox" onclick="finishTask(this)"/>
+                <span>Task 3</span>
+            </li>
+        </ul>
+    </div>
+</body> 
+
+</html>
